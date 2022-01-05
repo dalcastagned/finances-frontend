@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import GlobalStyle from "./styles/globalStyles";
 import * as C from './App.elements'
 import { categories } from './data/categories'
-import { items } from './data/items'
 import { getCurrentMonth, filterListByMonth } from './helpers/dateFilter'
 import { TableArea } from './components/TableArea/TableArea'
 import { InfoArea } from './components/InfoArea/InfoArea'

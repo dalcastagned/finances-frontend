@@ -13,7 +13,7 @@ export const GET_ITEMS = gql`
 `;
 
 export const ADD_ITEM = gql`
-  mutation addItem($date: Date, $category: String, $title: String, $value: Float) {
+  mutation addItem($date: String, $category: String, $title: String, $value: Float) {
     addItem(
       data: {
         date: $date
