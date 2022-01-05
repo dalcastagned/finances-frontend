@@ -7,14 +7,20 @@ import { getCurrentMonth, filterListByMonth } from './helpers/dateFilter'
 import { TableArea } from './components/TableArea/TableArea'
 import { InfoArea } from './components/InfoArea/InfoArea'
 import { InputArea } from './components/InputArea/InputArea';
+import { useItemsContext } from './context/Context'
 
 function App() {
 
-  const [list, setList] = useState(items)
+  const { contato } = useItemsContext()
+  const [list, setList] = useState([])
   const [filteredList, setFilteredList] = useState([])
   const [currentMonth, setCurrentMonth] = useState(getCurrentMonth());
   const [income, setIncome] = useState(0)
   const [expense, setExpense] = useState(0)
+
+  useEffect(() => {
+    contato.data ? setList(contato.data) : setList([])
+  }, [contato])
 
   useEffect(() => {
     setFilteredList(filterListByMonth(list, currentMonth))
@@ -55,18 +61,18 @@ function App() {
         <C.Header>
           <C.HeaderText>Sistema Financeiro</C.HeaderText>
         </C.Header>
-        <C.Body>
-          <InfoArea
-            currentMonth={currentMonth}
-            onMonthChange={handleMonthChange}
-            income={income}
-            expense={expense}
-          />
-          <InputArea onAdd={handleAddItem} />
-          <TableArea list={filteredList} />
+        <C.Body>   
+            <InfoArea
+              currentMonth={currentMonth}
+              onMonthChange={handleMonthChange}
+              income={income}
+              expense={expense}
+            />
+            <InputArea onAdd={handleAddItem} />
+            <TableArea list={filteredList} />
         </C.Body>
       </C.Container>
-    </>
+      </>
   );
 }
 
