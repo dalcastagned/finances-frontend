@@ -4,16 +4,19 @@ export const Container = styled.div`
     background-color: #fff;
     box-shadow: 0 0 5px #ccc;
     border-radius: 10px;
-    padding: 20px;
-    margin-top: -40px;
+    margin: -60px 10px 0 10px;
     display: flex;
     align-items: center;
+    flex-direction: column;
+
 `
 
 export const MountArea = styled.div`
-    flex: 1;
+    padding: 20px;
     display: flex;
     align-items: center;
+    width: 260px;
+    justify-content: center;
 `
 
 export const MonthArrow = styled.div`
@@ -24,11 +27,16 @@ export const MonthArrow = styled.div`
 `
 
 export const MonthTitle = styled.div`
-    flex: 1;
     text-align: center;
 `
 
 export const ResumeArea = styled.div`
-    flex: 2;
+    gap: 30px;
     display: flex;
+
+    
+    @media screen and (max-width: 350px){
+        flex-direction: column;
+        gap: 0;
+    }
 `

@@ -3,7 +3,7 @@ import GlobalStyle from "./styles/globalStyles";
 import * as C from './App.elements'
 import { categories } from './data/categories'
 import { getCurrentMonth, filterListByMonth } from './helpers/dateFilter'
-import { TableArea } from './components/TableArea/TableArea'
+import { TableArea } from './components/ItemsArea/ItemsArea'
 import { InfoArea } from './components/InfoArea/InfoArea'
 import { InputArea } from './components/InputArea/InputArea';
 import { useItemsContext } from './context/Context'
@@ -58,7 +58,7 @@ function App() {
       <GlobalStyle />
       <C.Container>
         <C.Header>
-          <C.HeaderText>Sistema Financeiro</C.HeaderText>
+          <C.HeaderText>Finanças</C.HeaderText>
         </C.Header>
         <C.Body>   
             <InfoArea

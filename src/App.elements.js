@@ -5,7 +5,7 @@ export const Container = styled.main`
 ` 
 
 export const Header = styled.div`
-    background-color: darkblue;
+    background-color: #00527c;
     height: 150px;
     text-align: center;
 `
@@ -17,6 +17,5 @@ export const HeaderText = styled.h1`
 
 export const Body = styled.div`
     margin: auto;
-    max-width: 980px;
     margin-bottom: 50px;
 `

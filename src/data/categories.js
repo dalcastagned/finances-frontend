@@ -1,5 +1,4 @@
 export const categories = {
-    food: { title: 'Alimentação', color: 'blue', expense: true },
-    rent: { title: 'Aluguel', color: 'brown', expense: true },
-    salary: { title: 'Salário', color: 'green', expense: false }
+    expense: { title: 'Despesa', color: 'red', expense: true },
+    income: { title: 'Receita', color: 'green', expense: false }
 }

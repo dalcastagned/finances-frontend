@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    flex: 1;
+    padding-bottom: 20px;
 `
 
 export const Title = styled.div`
     text-align: center;
     font-weight: bold;
-    color: #888;
+    color: #666;
     margin-bottom: 5px;
 `
 

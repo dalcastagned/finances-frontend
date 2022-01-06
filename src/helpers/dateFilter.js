@@ -29,6 +29,16 @@ export const formatDate = (date) => {
     return `${addZeroToDate(day)}/${addZeroToDate(month)}/${year}`
 }
 
+
+export const today = () => {
+    let today = new Date()  
+    let year = today.getFullYear()
+    let month = today.getMonth() + 1
+    let day = today.getDate()
+
+    return `${year}-${addZeroToDate(month)}-${addZeroToDate(day)}`
+}
+
 const addZeroToDate = (n) => n < 10 ? `0${n}` : `${n}`
 
 export const formatCurrentMonth = (currentMonth) => {
