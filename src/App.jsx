@@ -58,7 +58,7 @@ function App() {
       <GlobalStyle />
       <C.Container>
         <C.Header>
-          <C.HeaderText>Finanças</C.HeaderText>
+          <C.HeaderText>Financeiro</C.HeaderText>
         </C.Header>
         <C.Body>   
             <InfoArea
