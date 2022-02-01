@@ -2,7 +2,7 @@
 
 ## Preview
 <p align="center">
-    <img src='https://i.ibb.co/z58tFGC/Finan-as.gif'>
+    ![](https://i.ibb.co/z58tFGC/Finan-as.gif)
 </p>
 
 ## Descrição do Projeto
