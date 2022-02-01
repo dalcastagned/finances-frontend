@@ -2,7 +2,7 @@
 
 ## Preview
 <p align="center">
-    <img src='https://i.ibb.co/z58tFGC/Finan-as.gif'>
+    <img src='https://github.com/dalcastagned/finances-frontend/blob/main/preview.gif'>
 </p>
 
 ## Descrição do Projeto
